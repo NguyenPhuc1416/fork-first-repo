@@ -33,7 +33,7 @@ public class NodeServiceImpl implements NodeService {
     public NodeResponse createNode(NodeRequest nodeRequest) {
         ParentNode parentNode = parentNodeRepository.findByParentNodeGroupId(nodeRequest.getParentNodeGroupId()).orElseThrow(() -> new IllegalArgumentException("Parent Node not found"));
 
-        if(nodeRepository.existsByNodeId(nodeRequest.getNodeId())) {
+        if (nodeRepository.existsByNodeId(nodeRequest.getNodeId())) {
             throw new NodeAlreadyExistsException("Node with id " + nodeRequest.getNodeId() + " already exists");
         }
 

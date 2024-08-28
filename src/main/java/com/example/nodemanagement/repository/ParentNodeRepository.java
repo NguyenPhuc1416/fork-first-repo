@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface ParentNodeRepository extends JpaRepository<ParentNode,Long> {
+public interface ParentNodeRepository extends JpaRepository<ParentNode, Long> {
     Optional<ParentNode> findByParentNodeGroupId(String parentNodeGroupId);
 
 }

@@ -28,5 +28,4 @@ public class NodeRequest {
     private String parentNodeGroupId;
 
 
-
 }
