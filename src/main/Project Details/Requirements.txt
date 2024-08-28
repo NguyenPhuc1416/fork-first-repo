@@ -1,0 +1,5 @@
+Using the attributes provided in the attached Figma screen, create a CSV file and import it into the database.
+
+Create a schema and Java spring boot microservice.
+Create a POST API to add nodes, ensuring that null values are validated and special characters (“!@#$%^&*()”) are not allowed.
+Create a GET API to fetch a list of nodes

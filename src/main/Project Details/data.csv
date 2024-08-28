@@ -1,0 +1,11 @@
+node_id,node_name,description,memo,node_type,parent_node_group_id
+NODE_001,Node 1,Description 1,Memo 1,TRANSPONDER,PARENT_001
+NODE_002,Node 2,Description 2,Memo 2,TRANSPONDER,PARENT_002
+NODE_003,Node 3,Description 3,Memo 3,ROADM,PARENT_003
+NODE_004,Node 4,Description 4,Memo 4,ROADM,PARENT_004
+NODE_005,Node 5,Description 5,Memo 5,TRANSPONDER,PARENT_005
+NODE_006,Node 6,Description 6,Memo 6,ROADM,PARENT_001
+NODE_007,Node 7,Description 7,Memo 7,TRANSPONDER,PARENT_002
+NODE_008,Node 8,Description 8,Memo 8,ROADM,PARENT_003
+NODE_009,Node 9,Description 9,Memo 9,TRANSPONDER,PARENT_004
+NODE_010,Node 10,Description 10,Memo 10,ROADM,PARENT_005

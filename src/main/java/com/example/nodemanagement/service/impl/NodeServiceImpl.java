@@ -23,6 +23,7 @@ public class NodeServiceImpl implements NodeService {
     private final NodeRepository nodeRepository;
     private final ParentNodeRepository parentNodeRepository;
 
+    // Constructor Injection which is considered as a best practice
     @Autowired
     public NodeServiceImpl(NodeRepository nodeRepository, ParentNodeRepository parentNodeRepository) {
         this.nodeRepository = nodeRepository;
@@ -38,6 +39,10 @@ public class NodeServiceImpl implements NodeService {
         }
 
         Node node = new Node();
+
+        // For the object mapping, Orika or similar libraries could be used to avoid manual mapping and streamline the process.
+        // We can create one base mapper class and extend it for each entity to avoid code duplication.
+
         node.setNodeId(nodeRequest.getNodeId());
         node.setNodeName(nodeRequest.getNodeName());
         node.setDescription(nodeRequest.getDescription());
@@ -56,6 +61,7 @@ public class NodeServiceImpl implements NodeService {
         return nodes.map(this::toNodeResponse).getContent();
     }
 
+    // This can also be handled by a custom mapper class to avoid code duplication.
     private NodeResponse toNodeResponse(Node node) {
         NodeResponse nodeResponse = new NodeResponse();
         nodeResponse.setId(node.getId());

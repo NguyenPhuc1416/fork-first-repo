@@ -17,6 +17,7 @@ public class NodeController {
 
     private final NodeService nodeService;
 
+    //    Constructor Injection which is considered as a best practice
     @Autowired
     public NodeController(NodeService nodeService) {
         this.nodeService = nodeService;
