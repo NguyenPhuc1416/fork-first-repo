@@ -11,7 +11,7 @@ The Node Management Application is a Spring Boot microservice designed to manage
 
 ## Sample Data
 
-![Sample Data](src/main/Project Details/data.png)
+![data](https://github.com/user-attachments/assets/fcfee5db-08f8-478d-8596-08bd46866e60)
 
 ## Schema
 
@@ -61,11 +61,11 @@ VALUES
     "parent_node_group_id": "PARENT_001"
 }
 ```
-![Post Request](src/main/Project Details/Post_Request.png)
+![Post_Request](https://github.com/user-attachments/assets/5262d32f-1e4f-49b6-ab86-b1fb7b0d1985)
 
 **Get Request** : `http://localhost:8096/api/nodes`
 
 **Get Request with Pagination** : `http://localhost:8096/api/nodes?page=0&size=2`
 
-![Get Request](src/main/Project Details/Get_Request.png)
+![Get_Request](https://github.com/user-attachments/assets/ddc0d38f-42bb-4f39-8c7a-e5b4ab9a6475)
 
